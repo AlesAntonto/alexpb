@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a:link {
+            color: #0ce6f2;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #0ce6f2;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0098db;
+            text-decoration: underline;
+        }
+        body {
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #203562;
+            text-align:center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 4</title>
+    <script>
+        function fibonacci() {   
+        if(document.getElementById("lim").value > 0){
+            if(!isNaN(document.getElementById("lim").value)){
+            var a = 0;
+            var b = 1;
+            var c = 0;
+            var limite = document.getElementById("lim").value;
+            var fibonacci = "";
+
+            while(a <= limite){
+                fibonacci+=`${a}, `;
+                c = a + b;
+                a = b;
+                b = c;
+            }
+            // Quitar la coma y el espacio
+            fibonacci = fibonacci.slice(0, -2);
+
+            document.getElementById("out").innerHTML = `Resultado:<br> Serie de fibonacci con limite ${limite}:<br> ${fibonacci}`
+            } else {
+            document.getElementById("out").innerHTML = `Existe un error al ingresar los datos`;
+            }
+          } else{
+            document.getElementById("out").innerHTML = `El limite debe ser mayor que 0`;
+          }
+        }
+    </script>
+</head>
+    <p><a href= "index.html">Regresar al menu</a> <br></p>
+    Serie de Fibonacci <br>
+    Limite <input type="text" id="lim"><br>
+    <input type="button" value="Encontrar serie de fibonacci" onclick="fibonacci()"><br>
+    <p- id="out">Resultado:</p><br>
+</body>
+</html>

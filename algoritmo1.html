@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a:link {
+            color: #0ce6f2;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #0ce6f2;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0098db;
+            text-decoration: underline;
+        }
+        body {
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #203562;
+            text-align:center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 1</title>
+    <script>
+        function multiplos3() {
+            if(!isNaN(document.getElementById("num1").value) && !isNaN(document.getElementById("num2").value)) {
+                var a = parseInt(document.getElementById("num1").value);
+                var b = parseInt(document.getElementById("num2").value);
+                var multiplos = "";
+                for (let i = a; i <= b; i++) {
+                    if (i % 3 == 0) {
+                        multiplos += `${i} <br>`;
+                    }
+                }
+                if (a != b)
+                    for (let i = a; i >= b; i--) {
+                        if (i % 3 == 0) {
+                            multiplos += `${i} <br>`;
+                        }
+                    }
+                document.getElementById("out").innerHTML = `Resultado:<br> Los múltiplos de 3 entre ${a} y ${b} son:<br> ${multiplos}`;                
+            } else {
+                document.getElementById("out").innerHTML = `Existe un error en el tipo de datos ingresados`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p><a href="index.html">Regresar al menú</a><br></p>
+    Encontrar e imprimir todos los números comprendidos entre dos enteros que son múltiplos de 3. <br>
+    Dato 1 <input type="text" value="10" id="num1"><br>
+    Dato 2 <input type="text" value="20" id="num2"><br>
+    <input type="button" value="Encontrar los múltiplos de 3" onclick="multiplos3()"><br>
+    <p id="out">Resultado:</p><br>
+</body>
+</html>

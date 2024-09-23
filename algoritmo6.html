@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style-6.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 1</title>
+    <script src="./js/obfuscated-6.js"></script>
+</head>
+<body>
+    <a href="index.html"> Regresar al menu</a>
+    <br><br>
+    <div class="form-container">
+        <h3>Capture e imprima un arreglo de 10 elementos de tipo entero. El arreglo se debe de imprimir de forma horizontal y vertical, muestre el índice de cada elemento. La captura de elementos se debe cancelar al introducir el último. Incluya un botón de reinicio.</h3>
+    </div>
+
+    <div class="form-container">
+        <fieldset>  
+            <legend>Entrada</legend>
+            <form action="javascript:Capturar()">
+                <br>
+                <p id="arreglo">Capture el elemento [0]</p>
+                <input type="number" id="datos" onkeydown="if(event.key==='.' ){event.preventDefault();}" required><br>
+                <p id="error"></p>
+                <br><br><input type="submit" class="b" id="boton" value="Captura">
+                <input type="button" class="b" value="Reiniciar" onclick="Reiniciar()">
+                <br><br><br>
+            </form>
+        </fieldset>
+    </div>
+
+    <div class="form-container">
+        <fieldset><legend>Salida</legend>
+        <table>
+            <tr id="renglon"> </tr>
+            <tr id="renglon2"> </tr>
+        </table><br>
+        <table id="vertical">
+        </table>
+        </fieldset>
+    </div>
+</body>
+</html>

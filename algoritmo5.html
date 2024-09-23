@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a:link {
+            color: #0ce6f2;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #0ce6f2;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0098db;
+            text-decoration: underline;
+        }
+        body {
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #203562;
+            text-align:center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo5</title>
+    <script>
+         function gottfried() {
+            var a = parseInt(document.getElementById("lim").value);
+
+            if (!isNaN(a) && a > 0) {
+                var Sucesion = "";
+                var masmenos = false;
+                var pi = 0.0;
+
+                for (var i = 1; i < a * 2; i += 2) {
+                    if (masmenos) {
+                        Sucesion += `1/${i} + `;
+                        pi -= 1.0 / i;
+                        masmenos = false;
+                    } else {
+                        Sucesion += `1/${i} - `;
+                        pi += 1.0 / i;
+                        masmenos = true;
+                    }
+                }
+
+                pi *= 4;
+
+                // Mostrar los resultados
+                Sucesion = Sucesion.slice(0, -2); // Eliminar el último "+ " o "- "
+                document.getElementById("out").innerHTML = `Resultado: <br> Las iteraciones hasta ${a} son: <br> ${Sucesion}<br><br>`;
+                document.getElementById("out").innerHTML += `Pi es igual a: ${pi}`;
+            } else {
+                document.getElementById("out").innerHTML = "Ha ocurrido un error al ingresar los datos";
+            }
+        }
+    </script>
+</head>
+    <p><a href= "index.html">Regresar al menu</a> <br></p>
+    Calcular el valor de pi a partir del metodo Gottfried Leibniz<br>
+    Limite <input type="text" id="lim"><br>
+    <input type="button" value="Encontrar valor de pi" onclick="gottfried()"><br>
+    <p- id="out">Resultado:</p><br>  
+</body>
+</html>

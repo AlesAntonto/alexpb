@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style-8.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado Mágico</title>
+    <script src="./js/obfuscated-8.js"></script>
+</head>
+<body>
+    <p><a href="index.html">Regresar al menú</a><br></p>
+    <h2>Cuadrado Mágico</h2>
+    <p>Un cuadrado mágico es una tabla de grado primario donde se dispone de una serie
+        de números enteros en un cuadrado o matriz de forma tal que la suma de los números por columnas,
+        filas y diagonales principales sea la misma.</p>
+    Selecciona el tamaño del cuadrado: 
+    <select id="size" onchange="changeSize(parseInt(this.value))">
+        <option value="2">2x2</option>
+        <option value="3" selected>3x3</option>
+        <option value="4">4x4</option>
+        <option value="5">5x5</option>
+    </select>
+    <div id="table-container"></div>
+    <p id="result">No es un cuadrado mágico</p>
+    <button class="button" onclick="generateRandomSquare()">Generar Números</button>
+    <button class="button" onclick="calculateSums()">Calcular Sumas</button>
+    <button class="button" onclick="generateExampleAndCalculate()">Generar Ejemplo y Calcular</button>
+    <button class="button" onclick="generateMagicSquare()">Generar Cuadrado Mágico</button>
+</body>
+</html>
