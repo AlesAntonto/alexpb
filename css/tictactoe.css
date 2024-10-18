@@ -1,0 +1,71 @@
+input[type=button] {
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    background-color: #0ce6f2; /* Color principal */
+    color: #ffffff; /* Color de texto */
+    border: 5px solid #0098db; /* Color hover en el borde */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=button]:hover {
+    background-color: #0098db; /* Cambia al color hover cuando el botón es presionado */
+}
+
+input[type=submit] {
+    position: fixed;
+    top: 100px;
+    left: 800px;
+    font-size: 30px;
+    background-color: #0ce6f2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #0098db;
+}
+
+h1 {
+    position: fixed;
+    top: 20px;
+    left: 800px;
+    color: #ffffff; /* Color de texto */
+}
+
+table {
+    position: relative;
+    border: none;
+    border-collapse: collapse;
+}
+
+tr, td {
+    position: relative;
+}
+
+td {
+    border: 5px solid #203562; /* Color de fondo */
+}
+
+body {
+    background-color: #203562; /* Fondo del tablero */
+    color: #ffffff; /* Texto */
+}
+
+a.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0ce
+}
+:link, a:visited {
+  color: #0ce6f2;
+  text-decoration: none;
+}
+a:hover {
+  color: #0098db;
+  text-decoration: underline;
+}
