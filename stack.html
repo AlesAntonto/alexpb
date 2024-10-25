@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack</title>
+    <link rel="stylesheet" href="./css/stack.css">
+    <script src="./js/obfuscated-stack.js"></script>
+</head>
+<div class="regresar-container">
+    <a class="regresar" href="./index.html">Regresar</a> 
+</div>
+<body onload="Aleatorias()">
+    <h1>Pila Genérica</h1>
+    <p>Desarrolle una aplicación que muestre un objeto pila, e implemente los métodos Push, Pop, Peek, Clear, Find e IsEmpty.</p>
+    <br> Elemento: <input type="text" id="Elemento" onkeyup="CambioTexto()">
+    <input type="button" value="Push()" id="iPush" onclick="Push(); Aleatorias();">
+    <input type="button" value="Pop()" id="iPop" onclick="Pop()">
+    <input type="button" value="Peek()" id="iPeek" onclick="Peek()">
+    <input type="button" value="Clear()" id="iClear" onclick="Clear()">
+    <input type="button" value="Find()" id="iFind" onclick="Find()">
+    <input type="button" value="IsEmpty()" id="iIsEmpty" onclick="IsEmpty()">
+    <table>
+        <tbody id="tabla"></tbody>
+    </table>
+    <h3 id="mensaje"></h3>
+    <img src="https://i0.wp.com/somoshackersdelaprogramacion.es/wp-content/uploads/2022/05/stack.webp?fit=814%2C482&ssl=1" alt="Imagen de pila">
+</body>
+</html>
