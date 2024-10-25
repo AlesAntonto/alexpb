@@ -1,0 +1,78 @@
+/* Configuraciones generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #203562; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+}
+ 
+h1 {
+    color: #0ce6f2; /* Color principal */
+}
+ 
+p {
+    color: #ffffff;
+}
+ 
+input[type="text"], input[type="button"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+ 
+input[type="text"] {
+    background-color: #ffffff;
+    color: #000;
+}
+ 
+input[type="button"] {
+    background-color: #0ce6f2;
+    color: #203562;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+input[type="button"]:hover {
+    background-color: #0098db; /* Hover */
+}
+ 
+/* Estilo para los elementos de la pila */
+td {
+    padding: 10px;
+    background-color: transparent; /* Sin fondo ni borde */
+    color: #ffffff; /* Mantén el color del texto */
+}
+ 
+/* Estilo para el mensaje */
+#mensaje {
+    font-size: 18px;
+    margin-top: 20px;
+}
+ 
+/* Imagen de la pila */
+img {
+    margin-top: 15px;
+    width: 50%;
+    height: auto;
+}
+ 
+/* Enlace de regresar */
+.regresar-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+ 
+.regresar {
+    color: #0ce6f2;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+ 
+.regresar:hover {
+    color: #0098db; /* Hover */
+}
+ 
