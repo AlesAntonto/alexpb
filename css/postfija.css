@@ -1,0 +1,73 @@
+body {
+    background-color: #203562;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #0ce6f2;
+}
+
+label {
+    font-weight: bold;
+    color: #0ce6f2;
+}
+
+input[type="text"] {
+    width: 750px;
+    font-weight: bolder;
+    font-size: 1.8em;
+    padding: 10px;
+    border: 2px solid #0ce6f2;
+    border-radius: 5px;
+    color: #203562;
+}
+
+input[type="button"] {
+    background-color: #0098db;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="button"]:hover {
+    background-color: #0ce6f2;
+}
+
+#textResultado {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0ce6f2;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+td {
+    border: 1px solid #0ce6f2;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#textPaso {
+    background-color: #203562;
+    padding: 20px;
+    border-radius: 10px;
+    color: #0ce6f2;
+    width: 60%;
+    margin: 20px auto;
+    font-size: 1em;
+    text-align: left;
+    border: 1px solid #0ce6f2;
+}
