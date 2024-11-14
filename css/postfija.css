@@ -71,3 +71,17 @@ td {
     text-align: left;
     border: 1px solid #0ce6f2;
 }
+
+a.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0ce
+}
+:link, a:visited {
+  color: #0ce6f2;
+  text-decoration: none;
+}
+a:hover {
+  color: #0098db;
+  text-decoration: underline;
+}
