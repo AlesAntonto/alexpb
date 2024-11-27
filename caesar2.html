@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Decipher</title>
+    <link rel="stylesheet" href="./css/caesar2.css">
+    <script src="./js/caesar2.js"></script>
+</head>
+<a href="index.html" class="back-button">Regresar al menú</a>
+<body onload="load()">
+    <h1>Algoritmo Caesar Cipher</h1>
+    <p>Mensaje Encriptado: </p>
+    <textarea id="EncryptedMessage" rows="20" readonly></textarea><br>
+    <p>Key:</p>
+    <select id="key1" disabled>
+        <option value="">--</option>
+    </select>
+    <select  id="key2" disabled>
+        <option value="">--</option>
+    </select>
+    <select  id="key3" disabled>
+        <option value="">--</option>
+    </select>
+    <select  id="key4" disabled>
+        <option value="">--</option>
+    </select>
+    <select  id="key5" disabled>
+        <option value="">--</option>
+    </select>
+    <select  id="key6" disabled>
+        <option value="">--</option>
+    </select>
+
+    <input type="button" value="Clear" onclick="reset()">
+    <input type="file" id="keyFile"  accept=".txt"> 
+    <input type="button" value="Load Key" onclick="document.getElementById(keyFile).click()">
+
+    <input type="file" id="encryptedfile" accept=".txt"> 
+    <input type="button" value="Load encrypted file" onclick="document.getElementById(encryptedfile).click()">
+    
+    <input type="button" value="Decoded" onclick="decrypt()">
+
+    <input type="button" value="Save Decoded message" onclick="saveMessage()">
+
+    <br>
+    <p>Mensaje Original:</p>
+    <textarea id="originalMessage" rows="20"></textarea><br>
+
+</body>
+</html>
