@@ -1,0 +1,71 @@
+body {
+    background-color: #203562; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #0ce6f2; /* Color principal */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 2px solid #0ce6f2;
+    border-radius: 5px;
+    color: #203562;
+}
+
+input[type="button"] {
+    background-color: #0098db; /* Color hover */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #0ce6f2; /* Cambia al color principal al pasar el mouse */
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td {
+    border: 2px solid #0ce6f2;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #203562; /* Fondo oscuro de las celdas */
+}
+
+tr:nth-child(even) td {
+    background-color: #0098db; /* Alterna filas con color hover */
+}
+
+tr:nth-child(odd) td {
+    background-color: #203562; /* Alterna filas con fondo oscuro */
+}
+a.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0ce
+}
+:link, a:visited {
+  color: #0ce6f2;
+  text-decoration: none;
+}
+a:hover {
+  color: #0098db;
+  text-decoration: underline;
+}
